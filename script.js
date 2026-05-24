@@ -17,15 +17,20 @@ let amountInput = document.getElementById("amount");
 balanceText.innerText = "$" + balance;
 
 // add event listener to deposit button
+// detect button click
 depositButton.addEventListener("click", function() {
-    // Increase Balance 
+   
+    // store input value
+    let amount = parseFloat(amountInput.value);
+    // Validate input 
 
-  //balance = balance +100;
-
-    balance = balance + parseFloat(amountInput.value);
-
-    // update balance text
+    if(amount >0) {
+        // increase balance
+        balance = balance + amount;
+    
+  // update balance text
     balanceText.innerText = "$" + balance;
+    }
 });
 
 // select withdraw button
@@ -33,9 +38,13 @@ let withdrawButton = document.getElementById("withdraw");
 
 // add event listener to withdraw button
 withdrawButton.addEventListener("click", function() {
-    // decrease balance
-  //balance = balance - 100;
-    balance = balance - parseFloat(amountInput.value);
-    // Update screen
+    // store input value
+    let amount = parseFloat(amountInput.value);
+    // validate input
+    if(amount > 0 ) {
+        // decrease balance
+        balance = balance - amount;
+    }
+   // update screen
     balanceText.innerText="$" + balance;
 });
