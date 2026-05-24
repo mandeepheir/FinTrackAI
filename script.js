@@ -97,3 +97,18 @@ withdrawButton.addEventListener("click", function () {
     }
 
 });
+
+
+// Select logout button
+let logoutButton = document.getElementById("logout");
+
+// Detect click
+logoutButton.addEventListener("click", function () {
+
+    // Remove login session
+    localStorage.removeItem("loggedIn");
+
+    // Redirect to login page
+    window.location.href = "login.html";
+
+});
