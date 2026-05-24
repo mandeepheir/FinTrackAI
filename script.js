@@ -23,3 +23,13 @@ depositButton.addEventListener("click", function() {
     balanceText.innerText = "$" + balance;
 });
 
+// select withdraw button
+let withdrawButton = document.getElementById("withdraw");
+
+// add event listener to withdraw button
+withdrawButton.addEventListener("click", function() {
+    // decrease balance
+    balance = balance - 100;
+    // Update screen
+    balanceText.innerText="$" + balance;
+});
