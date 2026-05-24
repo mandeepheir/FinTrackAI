@@ -1,13 +1,17 @@
-/* Removes default spacing */
+/* Remove default browser spacing */
 body {
+
     margin: 0;
 
     /* Font style */
     font-family: Arial, sans-serif;
 
-    /* Center everything */
+    /* Center content horizontally */
     display: flex;
+
     justify-content: center;
+
+    /* Center content vertically */
     align-items: center;
 
     /* Full screen height */
@@ -15,31 +19,39 @@ body {
 
     /* Background color */
     background-color: #f4f4f4;
+
 }
 
 /* Main dashboard box */
 .dashboard {
+
     background: white;
 
     padding: 30px;
 
     border-radius: 15px;
 
+    width: 320px;
+
     text-align: center;
 
-    width: 300px;
+    /* Shadow effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
-/* Balance text */
+/* Balance amount style */
 #balance {
+
     font-size: 32px;
 
     color: green;
+
 }
-/* Input field */
+
+/* Input field styling */
 input {
+
     width: 90%;
 
     padding: 10px;
@@ -51,15 +63,19 @@ input {
     border: 1px solid gray;
 
     font-size: 16px;
+
 }
 
-/* Button section */
-.buttons {
+/* Button container spacing */
+.button-container {
+
     margin-top: 20px;
+
 }
 
-/* Buttons */
+/* General button styling */
 button {
+
     padding: 10px 20px;
 
     margin: 5px;
@@ -71,4 +87,45 @@ button {
     cursor: pointer;
 
     font-size: 16px;
+
+    color: white;
+
+}
+
+/* Deposit button color */
+#deposit {
+
+    background-color: green;
+
+}
+
+/* Withdraw button color */
+#withdraw {
+
+    background-color: red;
+
+}
+
+/* Transaction history list */
+#transaction-history {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 15px;
+
+}
+
+/* Transaction items */
+#transaction-history li {
+
+    background-color: #f4f4f4;
+
+    margin: 5px 0;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
 }

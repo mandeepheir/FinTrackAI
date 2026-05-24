@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Character encoding -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>FinTrackAi
 
-    </title>
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>FinTrackAI</title>
+
+    <!-- Connect CSS file -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <!-- main Dashboard Container -->
-    <div class = "dashboard">
-        <!-- App Title -->
-        <h1>FinTrack Ai</h1>
-    <!--Balance Card-->
-        <div class = "card" >
 
+    <!-- Main dashboard container -->
+    <div class="dashboard">
+
+        <!-- App heading -->
+        <h1>FinTrackAI</h1>
+
+        <!-- Balance card -->
+        <div class="card">
+
+            <!-- Balance title -->
             <h2>Current Balance</h2>
-        <!--Balance Amount-->
-            <p id="balance">$5000.00</p>
+
+            <!-- Balance amount -->
+            <p id="balance">$5000</p>
+
         </div>
 
-    <input type="text" id="amount" placeholder="Enter amount">
+        <!-- Amount input field -->
+        <input type="number" id="amount" placeholder="Enter Amount">
 
-    <!--Button Container-->
-        <div class = "button-container">
+        <!-- Button section -->
+        <div class="button-container">
+
+            <!-- Deposit button -->
             <button id="deposit">Deposit</button>
+
+            <!-- Withdraw button -->
             <button id="withdraw">Withdraw</button>
+
         </div>
+
+        <!-- Transaction history heading -->
+        <h3>Transaction History</h3>
+
+        <!-- Transaction list -->
+        <ul id="transaction-history">
+
+        </ul>
+
     </div>
-<script src="script.js"></script>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
