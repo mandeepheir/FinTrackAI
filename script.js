@@ -10,6 +10,9 @@ let balanceText = document.getElementById("balance");
 
 let depositButton = document.getElementById("deposit");
 
+// Select inpust fiels
+let amountInput = document.getElementById("amount");
+
 // show initial balance 
 balanceText.innerText = "$" + balance;
 
@@ -17,7 +20,9 @@ balanceText.innerText = "$" + balance;
 depositButton.addEventListener("click", function() {
     // Increase Balance 
 
-    balance = balance +100;
+  //balance = balance +100;
+
+    balance = balance + parseFloat(amountInput.value);
 
     // update balance text
     balanceText.innerText = "$" + balance;
@@ -29,7 +34,8 @@ let withdrawButton = document.getElementById("withdraw");
 // add event listener to withdraw button
 withdrawButton.addEventListener("click", function() {
     // decrease balance
-    balance = balance - 100;
+  //balance = balance - 100;
+    balance = balance - parseFloat(amountInput.value);
     // Update screen
     balanceText.innerText="$" + balance;
 });

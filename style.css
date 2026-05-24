@@ -38,6 +38,20 @@ body {
 
     color: green;
 }
+/* Input field */
+input {
+    width: 90%;
+
+    padding: 10px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid gray;
+
+    font-size: 16px;
+}
 
 /* Button section */
 .buttons {
