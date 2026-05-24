@@ -1,0 +1,60 @@
+/* Removes default spacing */
+body {
+    margin: 0;
+
+    /* Font style */
+    font-family: Arial, sans-serif;
+
+    /* Center everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Full screen height */
+    height: 100vh;
+
+    /* Background color */
+    background-color: #f4f4f4;
+}
+
+/* Main dashboard box */
+.dashboard {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    width: 300px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* Balance text */
+#balance {
+    font-size: 32px;
+
+    color: green;
+}
+
+/* Button section */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
