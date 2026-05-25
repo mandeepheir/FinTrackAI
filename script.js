@@ -1,5 +1,10 @@
 // Current balance amount
-let balance = 5000;
+//let balance = 5000;
+
+// Get balance from local storage
+let savedBalance = localStorage.getItem("balance");
+// set balance to local storage if not already set
+let balance = savedBalance ? parseFloat(savedBalance) : 5000;
 
 // Select balance text element from HTML
 let balanceText = document.getElementById("balance");
@@ -38,6 +43,8 @@ depositButton.addEventListener("click", function () {
 
         // Update balance on screen
         balanceText.innerText = "$" + balance;
+        // save balance to local storage
+         localStorage.setItem("balance", balance);
 
         // Create new list item
         let listItem = document.createElement("li");
@@ -71,9 +78,12 @@ withdrawButton.addEventListener("click", function () {
 
         // Reduce balance
         balance = balance - amount;
-
+s
         // Update balance on screen
         balanceText.innerText = "$" + balance;
+        // save balance to local storage
+
+         localStorage.setItem("balance", balance);
 
         // Create new transaction item
         let listItem = document.createElement("li");
