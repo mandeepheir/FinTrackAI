@@ -1,84 +1,159 @@
-/* Remove default browser spacing */
+/* =========================
+   GLOBAL STYLING
+========================= */
+
 body {
 
     margin: 0;
 
-    /* Font style */
     font-family: Arial, sans-serif;
 
-    /* Center content horizontally */
     display: flex;
 
     justify-content: center;
 
-    /* Center content vertically */
     align-items: center;
 
-    /* Full screen height */
-    height: 100vh;
+    min-height: 100vh;
 
-    /* Background color */
     background-color: #f4f4f4;
+
+    padding: 20px;
 
 }
 
-/* Main dashboard box */
+
+
+/* =========================
+   DASHBOARD CONTAINER
+========================= */
+
 .dashboard {
 
     background: white;
 
     padding: 30px;
 
-    border-radius: 15px;
+    border-radius: 20px;
 
-    width: 320px;
+    width: 90%;
+
+    max-width: 420px;
 
     text-align: center;
 
-    /* Shadow effect */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 
 }
 
-/* Balance amount style */
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+
+    margin-bottom: 10px;
+
+}
+
+h2, h3 {
+
+    color: #333;
+
+}
+
+
+
+/* =========================
+   CARD STYLING
+========================= */
+
+.card {
+
+    background: #fafafa;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+
+}
+
+
+
+/* =========================
+   BALANCE TEXT
+========================= */
+
 #balance {
 
-    font-size: 32px;
+    font-size: 36px;
 
     color: green;
 
+    font-weight: bold;
+
 }
 
-/* Input field styling */
+
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
 input {
 
     width: 90%;
 
-    padding: 10px;
+    padding: 12px;
 
-    margin-top: 15px;
+    margin-top: 12px;
 
     border-radius: 10px;
 
-    border: 1px solid gray;
+    border: 1px solid #ccc;
 
     font-size: 16px;
 
+    outline: none;
+
 }
 
-/* Button container spacing */
+
+
+/* Input focus effect */
+input:focus {
+
+    border-color: black;
+
+}
+
+
+
+/* =========================
+   BUTTON CONTAINER
+========================= */
+
 .button-container {
 
     margin-top: 20px;
 
 }
 
-/* General button styling */
+
+
+/* =========================
+   GENERAL BUTTONS
+========================= */
+
 button {
 
-    padding: 10px 20px;
+    padding: 12px 20px;
 
-    margin: 5px;
+    margin: 8px;
 
     border: none;
 
@@ -90,23 +165,74 @@ button {
 
     color: white;
 
+    transition: 0.3s;
+
 }
 
-/* Deposit button color */
+
+
+/* Hover effect */
+button:hover {
+
+    transform: scale(1.05);
+
+    opacity: 0.9;
+
+}
+
+
+
+/* Deposit button */
 #deposit {
 
     background-color: green;
 
 }
 
-/* Withdraw button color */
+
+
+/* Withdraw button */
 #withdraw {
 
     background-color: red;
 
 }
 
-/* Transaction history list */
+
+
+/* Logout button */
+#logout {
+
+    background-color: black;
+
+    margin-top: 15px;
+
+}
+
+
+
+/* =========================
+   ANALYTICS SECTION
+========================= */
+
+.analytics {
+
+    margin-top: 20px;
+
+}
+
+.analytics .card {
+
+    margin-top: 10px;
+
+}
+
+
+
+/* =========================
+   TRANSACTION HISTORY
+========================= */
+
 #transaction-history {
 
     list-style: none;
@@ -117,20 +243,90 @@ button {
 
 }
 
-/* Transaction items */
+
+
+/* Transaction item */
 #transaction-history li {
 
     background-color: #f4f4f4;
 
-    margin: 5px 0;
+    margin-top: 10px;
 
-    padding: 10px;
+    padding: 12px;
 
-    border-radius: 8px;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    text-align: left;
 
 }
-#logout {
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+    .dashboard {
+
+        padding: 20px;
+
+    }
+
+    button {
+
+        width: 90%;
+
+    }
+
+}
+
+/* =========================
+   LOGIN PAGE STYLING
+========================= */
+
+/* Login card spacing */
+.card {
+
+    margin-top: 20px;
+
+}
+
+/* Login heading */
+.card h2 {
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+/* Login button */
+#login {
+
     background-color: black;
-    color: white;
-    margin-top: 10px;
+
+    width: 95%;
+
+    margin-top: 20px;
+
+}
+
+/* Login button hover */
+#login:hover {
+
+    background-color: #333;
+
+}
+
+/* Login page title */
+.dashboard h1 {
+
+    color: #222;
+
+    margin-bottom: 10px;
+
 }
